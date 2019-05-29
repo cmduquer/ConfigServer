@@ -27,12 +27,15 @@ zuul:
   ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
   prefix: /api
   routes:
-    employee:
+    employee-service:
+      path: /**
       serviceId: employee-service
       strip-prefix: false
-    department:
+    department-service:
+      path: /**
       serviceId: department-service
       strip-prefix: false
-    organization:
+    organization-service:
+      path: /**
       serviceId: organization-service
       strip-prefix: false
