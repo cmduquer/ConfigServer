@@ -28,14 +28,14 @@ zuul:
   prefix: /api
   routes:
     employee-service:
-      path: /**
+      path: /employee/**
       serviceId: employee-service
       strip-prefix: false
     department-service:
-      path: /**
+      path: /department/**
       serviceId: department-service
       strip-prefix: false
     organization-service:
-      path: /**
+      path: /organization/**
       serviceId: organization-service
       strip-prefix: false
