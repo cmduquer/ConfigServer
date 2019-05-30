@@ -23,19 +23,16 @@ logging:
     console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
 
 zuul:
-  ignoredServices: '*'
-  ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
-  prefix: /api
   routes:
     employee-service:
-      path: /employee/**
+      path: /employee2/**
       serviceId: employee-service
       strip-prefix: false
     department-service:
-      path: /department/**
+      path: /departments/**
       serviceId: department-service
       strip-prefix: false
     organization-service:
-      path: /organization/**
+      path: /organizations/**
       serviceId: organization-service
       strip-prefix: false
