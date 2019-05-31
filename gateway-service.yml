@@ -25,7 +25,7 @@ logging:
 zuul:
   routes:
     employee-service:
-      path: /employee2/**
+      path: /employees/**
       serviceId: employee-service
       strip-prefix: false
     department-service:
